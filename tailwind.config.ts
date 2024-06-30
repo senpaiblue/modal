@@ -8,11 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+      backgroundImage: theme => ({
+        'custom-gradient': 'radial-gradient(circle at 50% 50%, #E2B2FF, #9F5AFF)',
+      }),
     },
   },
   plugins: [],
